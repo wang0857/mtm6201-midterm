@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- jquery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/75f81a7c7a.js" crossorigin="anonymous"></script>
+    <title>Mid-term Assignment - Sushi Kan Contact Page Mockup</title>
+</head>
+<body>
+
+    <!-- ================= Navigation ================= -->
+    <header>
+        <nav>
+            <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </li>
+                <li class="nav-list">
+                    <a href="./about-page.html">About Us</a>
+                </li>
+                <li class="nav-list">
+                    <a href="./index.html#menu">Menu</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="javascript:noService();"><i class="fa-solid fa-user"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:noService();"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- ================= Main Body ================= -->
+    <main class="contactForm-mainBody">
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <form> <!-- Won't submit to a real database, so there are no action and method -->
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email">
+                <label for="phone">Phone</label>
+                <input type="number" id="phone" name="phome">
+                <label for="message">Message*</label>
+                <textarea id="message" name="message"></textarea>
+                <input type="submit" value="SEND" onclick="noService();">
+            </form>
+        </div>
+    </main>
+
+
+
+    <!-- ================= Footer ================= -->
+    <footer>
+        <div class="container footer-container">
+            <div>
+                <span>Reviews </span>
+                <span>(57 reviews)</span>
+    
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+    
+                <ul>
+                    <li><a href="#">Terms and Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <ul>
+                    <li><a href="./about-page.html">About Us</a></li>
+                    <li><a href="./index.html#menu">Menu</a></li>
+                    <li><a href="javascript:noService();">Online Order</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="./index.html#location">Location</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <div class="social-media">
+                    <a href="javascript:noService();"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="javascript:noService();"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="javascript:noService();"><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+    
+                <p>&copy; Copyright Ruo-Fang Wang, 2022.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

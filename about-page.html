@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- jquery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/75f81a7c7a.js" crossorigin="anonymous"></script>
+    <title>Mid-term Assignment - About Sushi Kan Page Mockup</title>
+</head>
+<body>
+    
+    <!-- ================= Navigation ================= -->
+    <header>
+        <nav>
+            <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </li>
+                <li class="nav-list">
+                    <a href="#">About Us</a>
+                </li>
+                <li class="nav-list">
+                    <a href="./index.html#menu">Menu</a>
+                </li>
+                <li class="nav-list">
+                    <a href="./contact-page.html">Contact</a>
+                </li>
+                <li>
+                    <a href="javascript:noService();"><i class="fa-solid fa-user"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:noService();"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- ================= Main Body ================= -->
+
+    <main class="aboutUs-mainBody">
+        <div class="container">
+            <h2>About Sushi Kan</h2>
+
+            <div class="aboutUs-container">
+                <div class="aboutUs-imageCrop">
+                    <picture>
+                        <source srcset="./images/sushi-about-1140.jpg, 
+                                        ./images/sushi-about-1710.jpg 1.5x, 
+                                        ./images/sushi-about-2280.jpg 2x" 
+                                media="(min-width: 760px)" />
+                        
+                        <source srcset="./images/sushi-about-525.jpg, 
+                                        ./images/sushi-about-788.jpg 1.5x, 
+                                        ./images/sushi-about-1050.jpg 2x, 
+                                        ./images/sushi-about-1575.jpg 3x" 
+                                media="(min-width: 350px)" />
+    
+                        <source srcset="./images/sushi-about-350.jpg, 
+                                        ./images/sushi-about-525.jpg 1.5x, 
+                                        ./images/sushi-about-700.jpg 2x, 
+                                        ./images/sushi-about-1050.jpg 3x" 
+                                media="(max-width: 350px)" />
+    
+                        <img class="aboutUs-image"
+                             src="./images/sushi-about-1710.jpg"
+                             alt="sushi-banner-1">
+                    </picture>
+                </div>
+
+                <div class="aboutUs-border">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis suscipit lacus et tempus. Fusce condimentum fringilla sodales. Suspendisse nunc eros, euismod nec ornare vitae, faucibus in sapien. Pellentesque maximus felis tellus, a ornare diam elementum eget. Aliquam vitae malesuada metus. Proin sit amet sollicitudin lectus, id pulvinar lacus. Fusce at leo eu erat interdum pellentesque. Ut dapibus tincidunt sem, vel ultrices lorem rutrum eget. Aliquam id diam dignissim mauris dapibus malesuada. Maecenas imperdiet augue lobortis laoreet imperdiet.
+                    </p>
+                    <p>
+                        Note: The image is from <a href="https://pixabay.com/">https://pixabay.com/</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- ================= Footer ================= -->
+    <footer>
+        <div class="container footer-container">
+            <div>
+                <span>Reviews </span>
+                <span>(57 reviews)</span>
+    
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+    
+                <ul>
+                    <li><a href="#">Terms and Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="./index.html#menu">Menu</a></li>
+                    <li><a href="javascript:noService();">Online Order</a></li>
+                    <li><a href="./contact-page.html">Contact</a></li>
+                    <li><a href="./index.html#location">Location</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <div class="social-media">
+                    <a href="javascript:noService();"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="javascript:noService();"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="javascript:noService();"><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+    
+                <p>&copy; Copyright Ruo-Fang Wang, 2022.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

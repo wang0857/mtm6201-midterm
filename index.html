@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- jquery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/75f81a7c7a.js" crossorigin="anonymous"></script>
+    <title>Mid-term Assignment - Sushi Kan Main Page Mockup</title>
+</head>
+<body>
+
+    <!-- ================= Navigation ================= -->
+    <header>
+        <nav>
+            <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </li>
+                <li class="nav-list">
+                    <a href="./about-page.html">About Us</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#menu">Menu</a>
+                </li>
+                <li class="nav-list">
+                    <a href="./contact-page.html">Contact</a>
+                </li>
+                <li>
+                    <a href="javascript:noService();"><i class="fa-solid fa-user"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:noService();"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- ================= Main Banner ================= -->
+    <div class="slideShow-container">
+        <!-- banners -->
+        <ul class="slide-list">
+            <li class="slide">
+                <a href="javascript:void(0);">
+                    <picture>
+                        <source srcset="./images/sushi-1-1140.jpg, 
+                                        ./images/sushi-1-1710.jpg 1.5x, 
+                                        ./images/sushi-1-2280.jpg 2x" 
+                                media="(min-width: 760px)" />
+                        
+                        <source srcset="./images/sushi-1-525.jpg, 
+                                        ./images/sushi-1-788.jpg 1.5x, 
+                                        ./images/sushi-1-1050.jpg 2x, 
+                                        ./images/sushi-1-1575.jpg 3x" 
+                                media="(min-width: 350px)" />
+
+                        <source srcset="./images/sushi-1-350.jpg, 
+                                        ./images/sushi-1-525.jpg 1.5x, 
+                                        ./images/sushi-1-700.jpg 2x, 
+                                        ./images/sushi-1-1050.jpg 3x" 
+                                media="(max-width: 350px)" />
+
+                        <img class="slide-image"
+                             src="./images/sushi-1-1710.jpg"
+                             alt="sushi-banner-1">
+                    </picture>    
+                </a>
+            </li>
+            
+            <li class="slide">
+                <a href="javascript:void(0);">
+                    <picture>
+                        <source srcset="./images/sushi-2-1140.jpg, 
+                                        ./images/sushi-2-1710.jpg 1.5x, 
+                                        ./images/sushi-2-2280.jpg 2x" 
+                                media="(min-width: 760px)" />
+                        
+                        <source srcset="./images/sushi-2-525.jpg, 
+                                        ./images/sushi-2-788.jpg 1.5x, 
+                                        ./images/sushi-2-1050.jpg 2x, 
+                                        ./images/sushi-2-1575.jpg 3x" 
+                                media="(min-width: 350px)" />
+
+                        <source srcset="./images/sushi-2-350.jpg, 
+                                        ./images/sushi-2-525.jpg 1.5x, 
+                                        ./images/sushi-2-700.jpg 2x, 
+                                        ./images/sushi-2-1050.jpg 3x" 
+                                media="(max-width: 350px)" />
+
+                        <img class="slide-image"
+                             src="./images/sushi-2-1710.jpg"
+                             alt="sushi-banner-1">
+                    </picture>    
+                </a>
+            </li>
+
+            <li class="slide">
+                <a href="javascript:void(0);">
+                    <picture>
+                        <source srcset="./images/sushi-3-1140.jpg, 
+                                        ./images/sushi-3-1710.jpg 1.5x, 
+                                        ./images/sushi-3-2280.jpg 2x" 
+                                media="(min-width: 760px)" />
+                        
+                        <source srcset="./images/sushi-3-525.jpg, 
+                                        ./images/sushi-3-788.jpg 1.5x, 
+                                        ./images/sushi-3-1050.jpg 2x, 
+                                        ./images/sushi-3-1575.jpg 3x" 
+                                media="(min-width: 350px)" />
+
+                        <source srcset="./images/sushi-3-350.jpg, 
+                                        ./images/sushi-3-525.jpg 1.5x, 
+                                        ./images/sushi-3-700.jpg 2x, 
+                                        ./images/sushi-3-1050.jpg 3x" 
+                                media="(max-width: 350px)" />
+
+                        <img class="slide-image"
+                             src="./images/sushi-3-1710.jpg"
+                             alt="sushi-banner-1">
+                    </picture>    
+                </a>
+            </li>
+        </ul>
+
+        <!-- Heading and CTA button -->
+        <div class="heading">
+            <h1>
+                Order online <br>
+                and get free delievery
+            </h1>
+
+            <button onclick="noService();">Order Now</button>
+        </div>
+
+        <!-- Prev and Next buttons and dots -->
+        <div>
+            <a class="prev"><i class="fa-solid fa-angle-left"></i></a>
+            <a class="next"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+
+        <div class="dot-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    
+
+
+    <!-- ================= Introduction Section ================= -->
+    <section class="intro-section">
+        <div class="container">
+            <h2>Why Sushi Kan</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nulla dui, ultrices rutrum mollis vel, posuere quis odio. Etiam risus leo, ullamcorper ac facilisis eget, bibendum vitae purus. Integer finibus neque vel lorem rutrum, vitae gravida magna hendrerit.
+            </p>
+            <p>
+                Note: All images are retrieved from <a href="https://pixabay.com/">https://pixabay.com/</a>
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- ================= Menu Section ================= -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2>Menu</h2>
+
+            <ul class="menu-list">
+                <li>
+                    <picture>                        
+                        <source srcset="./images/menu-1-525.jpg, 
+                                        ./images/menu-1-788.jpg 1.5x, 
+                                        ./images/menu-1-1050.jpg 2x, 
+                                        ./images/menu-1-1575.jpg 3x" 
+                                media="(min-width: 350px)" />
+
+                        <source srcset="./images/menu-1-350.jpg, 
+                                        ./images/menu-1-525.jpg 1.5x, 
+                                        ./images/menu-1-700.jpg 2x, 
+                                        ./images/menu-1-1050.jpg 3x" 
+                                media="(max-width: 350px)" />
+
+                        <img src="./images/menu-1-1050.jpg"
+                             alt="Sushi">
+                    </picture>
+                    
+                    <h3>Sushi</h3>
+                </li>
+                <li>
+                    <picture>                        
+                        <source srcset="./images/menu-2-525.jpg, 
+                                        ./images/menu-2-788.jpg 1.5x, 
+                                        ./images/menu-2-1050.jpg 2x, 
+                                        ./images/menu-2-1575.jpg 3x" 
+                                media="(min-width: 350px)" />
+
+                        <source srcset="./images/menu-2-350.jpg, 
+                                        ./images/menu-2-525.jpg 1.5x, 
+                                        ./images/menu-2-700.jpg 2x, 
+                                        ./images/menu-2-1050.jpg 3x" 
+                                media="(max-width: 350px)" />
+
+                        <img src="./images/menu-2-1050.jpg"
+                             alt="Salad">
+                    </picture>
+                    
+                    <h3>Salad</h3>
+                </li>
+                <li>
+                    <picture>                        
+                        <source srcset="./images/menu-3-525.jpg, 
+                                        ./images/menu-3-788.jpg 1.5x, 
+                                        ./images/menu-3-1050.jpg 2x, 
+                                        ./images/menu-3-1575.jpg 3x" 
+                                media="(min-width: 350px)" />
+
+                        <source srcset="./images/menu-3-350.jpg, 
+                                        ./images/menu-3-525.jpg 1.5x, 
+                                        ./images/menu-3-700.jpg 2x, 
+                                        ./images/menu-3-1050.jpg 3x" 
+                                media="(max-width: 350px)" />
+
+                        <img src="./images/menu-3-1050.jpg"
+                             alt="Bento Box">
+                    </picture>
+                    
+                    <h3>Bento Box</h3>
+                </li>
+                <li>
+                    <picture>                        
+                        <source srcset="./images/menu-4-525.jpg, 
+                                        ./images/menu-4-788.jpg 1.5x, 
+                                        ./images/menu-4-1050.jpg 2x, 
+                                        ./images/menu-4-1575.jpg 3x" 
+                                media="(min-width: 350px)" />
+
+                        <source srcset="./images/menu-4-350.jpg, 
+                                        ./images/menu-4-525.jpg 1.5x, 
+                                        ./images/menu-4-700.jpg 2x, 
+                                        ./images/menu-4-1050.jpg 3x" 
+                                media="(max-width: 350px)" />
+
+                        <img src="./images/menu-4-1050.jpg"
+                             alt="Sashimi">
+                    </picture>
+                    
+                    <h3>Sashimi</h3>
+                </li>
+                <li>
+                    <picture>                        
+                        <source srcset="./images/menu-5-525.jpg, 
+                                        ./images/menu-5-788.jpg 1.5x, 
+                                        ./images/menu-5-1050.jpg 2x, 
+                                        ./images/menu-5-1575.jpg 3x" 
+                                media="(min-width: 350px)" />
+
+                        <source srcset="./images/menu-5-350.jpg, 
+                                        ./images/menu-5-525.jpg 1.5x, 
+                                        ./images/menu-5-700.jpg 2x, 
+                                        ./images/menu-5-1050.jpg 3x" 
+                                media="(max-width: 350px)" />
+
+                        <img src="./images/menu-5-1050.jpg"
+                             alt="Noodle">
+                    </picture>
+                    
+                    <h3>Noodle</h3>
+                </li>
+                <li>
+                    <picture>                        
+                        <source srcset="./images/menu-6-525.jpg, 
+                                        ./images/menu-6-788.jpg 1.5x, 
+                                        ./images/menu-6-1050.jpg 2x, 
+                                        ./images/menu-6-1575.jpg 3x" 
+                                media="(min-width: 350px)" />
+
+                        <source srcset="./images/menu-6-350.jpg, 
+                                        ./images/menu-6-525.jpg 1.5x, 
+                                        ./images/menu-6-700.jpg 2x, 
+                                        ./images/menu-6-1050.jpg 3x" 
+                                media="(max-width: 350px)" />
+
+                        <img src="./images/menu-6-1050.jpg"
+                             alt="Rice">
+                    </picture>
+                    
+                    <h3>Rice</h3>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <!-- ================= Location Section ================= -->
+    <section class="location-section" id="location">
+        <div class="container">
+            <h2>Location</h2>
+            <p>
+                1280 Baseline Rd, Ottawa, ON K2C 0A9
+            </p>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36384.347671463845!2d-75.76174702311238!3d45.35497231378275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce06f14e80e309%3A0xa97f01b292ac606a!2sSushi%20Kan!5e0!3m2!1szh-TW!2sca!4v1646373810262!5m2!1szh-TW!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <div>
+                    <h3>Operation Hours</h3>
+                    <p>Mon. - <b>Sun.</b><br>
+                    11:30am - 9:00pm</p>
+                    <p><b>Tel: 
+                        <a href="tel:+1-613-221-9545">613-221-9545</a>
+                    </b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================= Footer ================= -->
+    <footer>
+        <div class="container footer-container">
+            <div>
+                <span>Reviews </span>
+                <span>(57 reviews)</span>
+    
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+    
+                <ul>
+                    <li><a href="javascript:noService();">Terms and Condition</a></li>
+                    <li><a href="javascript:noService();">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <ul>
+                    <li><a href="./about-page.html">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="javascript:noService();">Online Order</a></li>
+                    <li><a href="./contact-page.html">Contact</a></li>
+                    <li><a href="#location">Location</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <div class="social-media">
+                    <a href="javascript:noService();"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="javascript:noService();"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="javascript:noService();"><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+    
+                <p>&copy; Copyright Ruo-Fang Wang, 2022.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
