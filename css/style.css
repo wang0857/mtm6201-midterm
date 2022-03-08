@@ -95,15 +95,15 @@ p{
 
 
 
-/* ================= Image width Setting ================= */
+/* ================= Image and Map width Setting ================= */
 
 img, iframe {
 	width: 100%;
 }
 
 
-/* "TODO: 剩下動畫，顯而易見至少的2個，可以加在button上，還有介紹頁的往左滑入" */
-/* ================= Mobile Version Start ================= */
+
+/* ================= Mobile Version and Overall Style Setting Start ================= */
 
 /* Mobile First */
 /* Width under 350px */
@@ -114,7 +114,7 @@ img, iframe {
 
 
 
-/* ================= Navigarion ================= */
+/* ================= ALL: Navigarion ================= */
 
 header {
 	background-color: #1c1c1c;
@@ -210,7 +210,7 @@ nav>ul>li>a {
 	animation: fade .8s;
 }
 
-/* Transition fade animation */
+/* Banner transition animation */
 @keyframes fade {
 	from {opacity: .4;}
 	to {opacity: 1;}
@@ -522,7 +522,7 @@ nav>ul>li>a {
 
 
 
-/* ================= Footer ================= */
+/* ================= ALL: Footer ================= */
 
 footer {
 	background-color: #1c1c1c;
@@ -635,7 +635,7 @@ footer p {
 
 
 
-/* ================= Mobile Version End ================= */
+/* ================= Mobile Version and Overall Style Setting End ================= */
 
 
 
@@ -648,7 +648,7 @@ footer p {
 
 
 
-	/* ================= Navigarion ================= */
+	/* ================= ALL: Navigarion ================= */
 
 	/* logo */
 	nav>a>img {
@@ -813,7 +813,6 @@ footer p {
 		margin: .5em 0em;
 	}
 
-
 	.aboutUs-image {
 		height: 466px;
 	}
@@ -862,7 +861,7 @@ footer p {
 
 
 
-	/* ================= Footer ================= */
+	/* ================= ALL: Footer ================= */
 
 	footer {
 		padding: 5em 0em 6em;
@@ -944,7 +943,7 @@ footer p {
 	
 	
 	
-	/* ================= Navigarion ================= */
+	/* ================= ALL: Navigarion ================= */
 	
 	/* logo */
 	nav>a>img {
@@ -1050,7 +1049,7 @@ footer p {
 	}
 	
 	/* prev and next buttons */
-	/* minor adjust button when it is desktop version. */
+	/* minor adjust button's size when it is on the desktop version. */
 	.prev, .next {
 		padding: .3em .5em;
 		font-size: 5em;
@@ -1123,7 +1122,7 @@ footer p {
 		column-gap: 5em;
 	}
 	
-	/* Desktop version: Change the color of menu's image when mouse overs it */
+	/* Only for Desktop version: Change the grayscale of menu's image when the mouse overs it. */
 	.menu-list>li {
 		filter: grayscale(.8);
 		transition: .3s ease-in-out;
@@ -1219,7 +1218,7 @@ footer p {
 		animation: moveToRight 2s;
 	}
 
-	/* Move the image to right in a fixed frame */
+	/* Move the image to right within a fixed frame. */
 	@keyframes moveToRight {
 		from {
 			transform: translateX(-150px);
@@ -1243,7 +1242,7 @@ footer p {
 		animation: fadeInFromLeft 1.5s;
 	}
 
-	/* Let the paragraph fade in from left side*/
+	/* Let the paragraph fade in from left side.*/
 	@keyframes fadeInFromLeft {
 		from {
 			transform: translateX(50px);
@@ -1301,7 +1300,7 @@ footer p {
 	
 	
 	
-	/* ================= Footer ================= */
+	/* ================= ALL: Footer ================= */
 	
 	footer {
 		font-weight: 700;
@@ -1347,13 +1346,17 @@ footer p {
 
 
 
-/* Adjust Object's Position for Bigger Desktop*/
+/* Adjust object's position and size for the bigger Desktop screen. */
 
 @media screen and (min-width: 1400px) {
 	.container {
 		width: 1316px;
 		margin: 0px auto;
 	}
+
+
+
+	/* ================= ALL: Navigation ================= */
 	
 	/* logo */
 	nav>a>img {
@@ -1371,6 +1374,14 @@ footer p {
 		font-size: 2em;
 	}
 
+
+
+	/* ================= Main Page Start ================= */
+
+
+
+	/* ================= Main Banner ================= */
+
 	/* heading part */
 	.heading {
 		top: 25%;
@@ -1378,8 +1389,7 @@ footer p {
 
 
 	
-	/* ================= Main Page ================= */
-	
+	/* ================= Menu Section ================= */
 	.menu-list {
 		row-gap: 5em;
 		column-gap: 7em;
@@ -1391,7 +1401,11 @@ footer p {
 
 
 
-	/* ================= About Page ================= */
+	/* ================= Main Page End ================= */
+
+
+
+	/* ================= About Page Start ================= */
 	
 	.aboutUs-mainBody {
 		padding: 0em 0em 10em;
@@ -1421,7 +1435,7 @@ footer p {
 		animation: moveToRight 2s;
 	}
 
-	/* Move the image to right in a fixed frame */
+	/* Adjust the beginning position and the ending position. */
 	@keyframes moveToRight {
 		from {
 			transform: translateX(-300px);
@@ -1450,7 +1464,11 @@ footer p {
 
 
 
-	/* ================= Contact Page ================= */
+	/* ================= About Page End ================= */
+
+
+
+	/* ================= Contact Page Start ================= */
 	
 	.contactForm-mainBody {
 		padding: 1em 0em 10em;
@@ -1459,10 +1477,12 @@ footer p {
 	.contactForm-mainBody h2 {
 		font-size: 8em;
 	}
+
+	/* ================= Contact Page End ================= */
 }
 
 
-/* Adjust Object's position when it is on a much bigger screen. */
+/* Adjust the object's position and size when it is on a much bigger screen. */
 @media screen and (min-width: 1900px) {
 	.container {
 		width: 1640px;
@@ -1471,7 +1491,8 @@ footer p {
 	
 
 
-	/* ================= Navigation ================= */
+	/* ================= ALL: Navigation ================= */
+
 	/* logo */
 	nav>a>img {
 		top: 1%;
@@ -1494,7 +1515,7 @@ footer p {
 
 
 
-	/* ================= Main Page ================= */
+	/* ================= Main Page Start ================= */
 	
 	.menu-list {
 		row-gap: 6em;
@@ -1504,10 +1525,14 @@ footer p {
 	.menu-section h3 {
 		font-size: 5em;
 	}
+
+
+
+	/* ================= Main Page End ================= */
 	
 
 
-	/* ================= About Page ================= */
+	/* ================= About Page Start ================= */
 	.aboutUs-border{
 		grid-column: 4/9;
 		padding: 6em 2.5em 7em 16em;
@@ -1516,6 +1541,10 @@ footer p {
 	.aboutUs-container p {
 		font-size: 1.8em;
 	}
+
+
+
+	/* ================= About Page End ================= */
 
 
 
@@ -1536,7 +1565,11 @@ footer p {
 
 
 
-	/* ================= Footer ================= */
+	/* ================= Contact Page End ================= */
+
+
+
+	/* ================= ALL: Footer ================= */
 	.footer-container {
 		display: grid;
 		grid-template-columns: 40em 30em 30em;
