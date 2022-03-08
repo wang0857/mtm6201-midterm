@@ -561,14 +561,14 @@ footer p {
 	font-size: 1.6em;
 }
 
-.stars i:hover ~ i {
-	color: #707070;
-	transition: .3s ease;
-}
-
 .footer-container ul li {
 	font-size: 1.5em;
 	margin: .5em 0em;
+}
+
+.footer-container ul li a:hover {
+	color: #ffffff;
+	transition: .3s ease;
 }
 
 .social-media {
@@ -576,6 +576,7 @@ footer p {
 	margin: 1em 0em;
 }
 
+.stars i:hover ~ i,
 .social-media a:hover ~ a {
 	color: #707070;
 	transition: .3s ease;
