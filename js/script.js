@@ -48,7 +48,7 @@ $(document).ready(function(){
         if ( n >= slide.length) {index = 0;}
         if ( n < 0) {index = slide.length-1;}
 
-        slide.eq(n-1).toggleClass("slideActive").siblings().removeClass("slideActive");
+        slide.eq(n-1).addClass("slideActive").siblings().removeClass("slideActive");
         dot.eq(n-1).addClass("dotActive").siblings().removeClass("dotActive");
     }
 
